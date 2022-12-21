@@ -2,19 +2,8 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
-import notesA from "../notesA";
+// import notesA from "../notesA";
 import CreateArea from "./CreateArea";
-
-
-// function newNotes(note){
-//     return(
-//         <Note 
-//             key={note.key}
-//             title={note.title}
-//             content={note.content}
-//         />
-//     );
-// }
 
 function App() {
     const [notes,setNotes]=useState([]);
@@ -50,12 +39,12 @@ function App() {
                 );
             })}
 
-            <Note
+            {/* <Note
                 title="First Note"
                 content="This is the first Note."
-            />
+            /> */}
 
-            {notesA.map( note => (<Note key={note.key} title={note.title} content={note.content} /> ))}
+            {/* {notesA.map( note => (<Note key={note.key} title={note.title} content={note.content} /> ))} */}
 
             <Footer />
         </div>
