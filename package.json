@@ -1,4 +1,5 @@
 {
+    "homepage": "https://Shreeyash01.github.io/KeeperApp",
     "name": "keeper-app-part-1-starting",
     "version": "1.0.0",
     "description": "",
@@ -10,6 +11,7 @@
         "@mui/icons-material": "^5.10.16",
         "@mui/material": "^5.10.16",
         "@mui/styled-engine-sc": "^5.10.16",
+        "gh-pages": "^4.0.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-scripts": "^5.0.1",
@@ -19,6 +21,8 @@
         "typescript": "3.3.3"
     },
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
